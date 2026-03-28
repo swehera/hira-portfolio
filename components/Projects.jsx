@@ -5,41 +5,18 @@ import { useProjects } from "../lib/hooks";
 // Static fallback projects (shown while loading or if API has none)
 const STATIC_PROJECTS = [
   {
-    emoji: "🛒", title: "E-Commerce Platform",
-    desc: "A full-featured online store with cart management, user authentication, and Stripe payment integration.",
-    tags: ["React", "Node.js", "MongoDB"], badge: "React.js",
-    bg: "linear-gradient(135deg,#0d1a2d,#1a2f4a)", live: "#", github: "#",
+    emoji: "🛫", title: "Tour Management System",
+    desc: "This is enterprise-level software with multiple role-based access and dashboards, a beautiful design with Tailwind CSS, and many more things.",
+    tags: ["React", "NextJS", "NodeJS", "ExpressJs", "PostGreSql"], badge: "React.js",
+    bg: "linear-gradient(135deg,#0d1a2d,#1a2f4a)", live: "https://tour-master-pro.vercel.app/", github: "https://github.com/swehera/tour-master",
   },
   {
-    emoji: "📱", title: "Fitness Tracker App",
-    desc: "Cross-platform mobile app to log workouts, track progress, and set fitness goals with beautiful charts.",
-    tags: ["React Native", "Firebase", "Expo"], badge: "React Native",
+    emoji: "🤖", title: "Pharmacy Management System",
+    desc: "This is a management software for local pharmacy",
+    tags: ["React", "NextJS", "NodeJS", "ExpressJs", "MongoDB"], badge: "React.js",
     bg: "linear-gradient(135deg,#1a0d2d,#2d1a4a)", badgeColor: "var(--accent2)", live: "#", github: "#",
-  },
-  {
-    emoji: "🤖", title: "Task Manager App",
-    desc: "Native Android productivity app with Kanban boards, reminders, and team collaboration features.",
-    tags: ["Kotlin", "Room DB", "MVVM"], badge: "Android",
-    bg: "linear-gradient(135deg,#0d2d1a,#1a4a2d)", badgeColor: "#22c55e", live: "#", github: "#",
-  },
-  {
-    emoji: "💬", title: "Real-Time Chat App",
-    desc: "WebSocket-powered chat with rooms, file sharing, and emoji reactions.",
-    tags: ["Next.js", "Socket.io", "Redis"], badge: "Next.js",
-    bg: "linear-gradient(135deg,#2d1a0d,#4a2d1a)", live: "#", github: "#",
-  },
-  {
-    emoji: "📊", title: "Analytics Dashboard",
-    desc: "Data visualization dashboard with interactive charts and real-time data streaming.",
-    tags: ["React", "D3.js", "REST API"], badge: "React",
-    bg: "linear-gradient(135deg,#0d1f2d,#1a3545)", live: "#", github: "#",
-  },
-  {
-    emoji: "🌍", title: "Travel Companion",
-    desc: "Offline-first travel app with maps, itinerary planning, and local discovery.",
-    tags: ["React Native", "Maps API", "SQLite"], badge: "Mobile",
-    bg: "linear-gradient(135deg,#1a0d1a,#2d1a3a)", badgeColor: "var(--accent2)", live: "#", github: "#",
-  },
+  }
+  
 ];
 
 const BG_GRADIENTS = [
@@ -133,10 +110,10 @@ export default function Projects() {
                   ))}
                 </div>
                 <div className="flex gap-2.5">
-                  <a href={p.live} className="btn-primary flex-1 justify-center" style={{ padding: "8px 12px", fontSize: "0.72rem" }}>
+                  <a href={p.live} target="_blank" className="btn-primary flex-1 justify-center" style={{ padding: "8px 12px", fontSize: "0.72rem" }}>
                     Live Demo ↗
                   </a>
-                  <a href={p.github} className="btn-outline flex-1 justify-center" style={{ padding: "8px 12px", fontSize: "0.72rem" }}>
+                  <a href={p.github} target="_blank" className="btn-outline flex-1 justify-center" style={{ padding: "8px 12px", fontSize: "0.72rem" }}>
                     GitHub
                   </a>
                 </div>

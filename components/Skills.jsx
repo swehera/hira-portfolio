@@ -17,10 +17,16 @@ const stackCategories = [
     chips: ["React Native"],
   },
   {
+    icon: "💻",
+    title: "Backend",
+    color: "rgba(255,107,53,0.1)",
+    chips: ["NodeJS", "ExpressJS", "REST APIs", "MongoDB", "PostgreSQL", "Postman"],
+  },
+  {
     icon: "🛠️",
     title: "Tools & More",
     color: "rgba(0,255,231,0.1)",
-    chips: ["Node.js", "Git & GitHub", "Bitbucket", "VS Code", "Figma", "REST APIs", "MongoDB", "PostgreSQL", "Postman"],
+    chips: [ "Git & GitHub", "Bitbucket", "VS Code", "Figma"],
   },
 ];
 

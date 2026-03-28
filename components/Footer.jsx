@@ -10,10 +10,22 @@ export default function Footer() {
           <span style={{ color: "var(--accent)" }}>&lt;Lutfor Rahman Hira/&gt;</span>.
           Built with ❤️ and ☕
         </p>
-        <div className="flex items-center gap-6">
-          {["GitHub", "LinkedIn", "Twitter"].map((s) => (
-            <a key={s} href="#" className="nav-link font-mono">
-              {s}
+       
+         <div className="flex items-center gap-6">
+          {[
+            {
+              id: 1,
+              name: "GitHub",
+              link: "https://github.com/swehera/",
+            },
+            {
+              id: 2,
+              name: "Linkdin",
+              link: "https://www.linkedin.com/in/lutfor-rahman-hera/",
+            }
+          ].map((s) => (
+            <a key={s.id} href={`${s.link}`} target="_blank" className="nav-link font-mono">
+              {s.name}
             </a>
           ))}
         </div>
