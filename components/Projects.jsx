@@ -7,14 +7,14 @@ const STATIC_PROJECTS = [
   {
     emoji: "🛫", title: "Tour Management System",
     desc: "This is enterprise-level software with multiple role-based access and dashboards, a beautiful design with Tailwind CSS, and many more things.",
-    tags: ["React", "NextJS", "NodeJS", "ExpressJs", "PostGreSql"], badge: "React.js",
+    tags: ["React", "NextJS", "NodeJS", "ExpressJs", "PostGreSql"], badge: "PERN STACT",
     bg: "linear-gradient(135deg,#0d1a2d,#1a2f4a)", live: "https://tour-master-pro.vercel.app/", github: "https://github.com/swehera/tour-master",
   },
   {
     emoji: "🤖", title: "Pharmacy Management System",
     desc: "This is a management software for local pharmacy",
-    tags: ["React", "NextJS", "NodeJS", "ExpressJs", "MongoDB"], badge: "React.js",
-    bg: "linear-gradient(135deg,#1a0d2d,#2d1a4a)", badgeColor: "var(--accent2)", live: "#", github: "#",
+    tags: ["React", "NextJS", "NodeJS", "ExpressJs", "MongoDB"], badge: "MERN STACT",
+    bg: "linear-gradient(135deg,#1a0d2d,#2d1a4a)", badgeColor: "var(--accent2)", live: "https://pharmacy-management-system-hera.vercel.app/", github: "https://github.com/swehera/pharmacy-management-system",
   }
   
 ];
